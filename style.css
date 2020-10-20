@@ -1,0 +1,230 @@
+/*fonts */
+@font-face{
+    font-family: Raleway-regular;
+    src: url(../fonts/Raleway/static/Raleway-Regular.ttf);
+}
+@font-face{
+    font-family: Raleway-medium;
+    src: url(../fonts/Raleway/static/Raleway-Medium.ttf);
+    
+}
+@font-face{
+    font-family: Raleway-bold;
+    src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
+}
+@font-face{
+    font-family: Raleway-semibold;
+    src: url(../fonts/Raleway/static/Raleway-SemiBold.ttf);
+}
+@font-face{
+    font-family: Raleway-black;
+    src: url(../fonts/Raleway/static/Raleway-Black.ttf);
+}
+/*colors */
+:root{
+    --primary:#EEBF00;
+    --secondary:#232B38;
+    --ternary:#6C6C6C;
+    --DANGER:#FE4545;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
+}
+/*reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    -webkit-font-smoothing:antialiased;
+}
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+@media (min-width:576px) {
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        max-width: 1152px;
+    }
+    .icons{
+        color: #FFFFFF;
+    }
+}
+header.topbar.icons i{
+    padding-right: 0.6rem;
+}
+header.topbar{
+    background:var(--secondary);
+    color:var(--pure);
+    font-family:"Raleway-semibold";
+    padding: 0.75rem 0;
+}
+header.topbar .auth a{
+    color: var(--pure);
+    text-decoration: none;
+}
+header.topbar.container{
+    
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+}
+header.topbar.auth.devider{
+    padding: 0 1rem;
+}
+.justify-center{
+    justify-content: center;
+}
+.navbar a{
+    text-decoration: none;
+    color:var(--secondary)
+    font: size 1rem;
+    padding: 1rem 1.5rem;
+    transition:all .3s ease;
+
+}
+.navbar a.active{
+    background: var(--primary);
+    color: var(--pure);
+}
+.navbar a:hover{
+    background: var(--primary);
+    color: var(--pure);
+}
+.magic-shadow{
+    position: relative;
+    background: var(--heaven);
+
+}
+.magic-shadow:after{
+    content: ;
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../images/shadow1.png);
+    background-repeat: no-repeat;
+    bottom: -40px;
+    position: absolute
+    z-index:-1 ;
+}
+.hero{
+    height: 600px;
+    background-image:url(./)
+
+}
+.btn{
+    padding: 0.50rem 0.75rem;
+    border-radius: 30px;
+    border: none;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+.btn-primary{
+    background: var(--primary);
+    color: var(--heaven)
+}
+.btn-primary:hover{
+    background: var(--heaven);
+    color: var(--primary)
+}
+.btn-secondary{
+    background: var(--secondary);
+    color: var(--heaven)
+}
+.btn-secondary:hover{
+    background: var(--heaven);
+    color: var(--secondary);
+}
+.hero-img{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+section{
+    padding: 4rem 0;
+}
+.section-heading{
+    font-family:"raleway-bold";
+    text-align: center;
+    position: relative;
+    margin-bottom: 6rem;
+}
+.section-heading:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/top\'s-under.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -40px;
+}
+.section.top-products.food-slider.food-card{
+    background: var(--heaven);
+    object-fit: contain;
+    padding: 1.5rem ;
+    border-radius: 4px;
+}
+.text-center{
+    text-align: center;
+}
+.btn-2:hover{
+    background: var(--peimary);
+    color: var(--heaven);
+}
+.slik-slide{
+    margin: 0 27px;
+
+}
+.slik-list{
+    margin: 0 -27px;
+}
+.flex-1{
+    flex:1;
+}
+.main-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.nav-background{
+    width: 100%;
+    height: 100%;
+    background: var(--light);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 1;
+}
+.nav-trigger{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 15px;
+}
